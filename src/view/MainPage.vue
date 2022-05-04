@@ -12,7 +12,10 @@
       </option>
     </select>
 
-    <table class="table table-border">
+    <!-- 화면 표시 여부는 v-if와 v-show가 있다. 
+        if는 조건이 안맞으면 아이에 렌더링을 하지 않는다.
+        show는 렌더링은 하지만 화면에 보이지 않을 뿐이다. -->
+    <table class="table table-border" v-if="tableShow">
       <tr :key="i" v-for="(d, i) in options">
         <td>{{ d.v }}</td>
         <td>{{ d.t }}</td>
@@ -45,6 +48,7 @@ export default {
         },
       ],
       region: "J",
+      tableShow: false,
     };
   },
 
@@ -67,6 +71,7 @@ export default {
       alert(this.region);
     },
   },
+
   beforeCreate() {
     console.log("beforeCreate");
   },
