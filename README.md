@@ -1,24 +1,4 @@
-# prac
+Vue 맛보기
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+v-model, v-bind, v-on, v-if, v-for, computed, watch 등
+기본 기능 체험
